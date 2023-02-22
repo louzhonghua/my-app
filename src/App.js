@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import BasicComponentList from './pages/leftArea/BasicComponentList';
+import MiddleComponentArea from './pages/centerArea/MiddleComponentArea';
+import EditComponentArea from './pages/rightArea/EditComponentArea';
+import CalendarApp from './pages/Calendar'
 
 function App() {
+  //三个基础组件使用flex布局
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <div className="leftArea">
+        <BasicComponentList />
+      </div>
+      <div className="centerArea">
+        <MiddleComponentArea />
+      </div>
+      <div className="rightArea">
+        <EditComponentArea />
+      </div> */}
+      <CalendarApp />
     </div>
   );
 }
